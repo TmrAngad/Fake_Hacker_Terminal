@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax&display=swap" rel="stylesheet">
+    <title>pro hacker </title>
+    <style>
+        body {
+            background-color: green;
+            color: white;
+            font-size: 40px;
+            line-height: 2;
+            font-family: 'Rubik Broken Fax', system-ui;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        //Pro Hacker
+        let divCon;
+        let dot;
+        let text = [">>>Initializing Hacking", ">>>Initialized Hacking now reading your data",
+            ">>>Reading your Files",
+            ">>>Password files Detected",
+            ">>>Sending all passwords and personal files to server",
+            ">>>Cleaning up"]
+
+        const randamDelay = async () => {
+            return new Promise((resolve, reject) => {
+                let randomTime = Math.floor(Math.random() * 7000)
+                setTimeout(() => {
+                    console.log(randomTime)
+                    resolve()
+                }, randomTime)
+            })
+        }
+        const adItem = async (item) => {
+            await randamDelay()
+            divCon = document.createElement('div')
+            divCon.innerHTML = item
+            document.body.append(divCon)
+        }
+
+        const blinkDot = async () => {
+            dot = setInterval(() => {
+                if (divCon.innerHTML.endsWith('...')) {
+                    divCon.innerHTML = divCon.innerHTML.slice(0, divCon.innerHTML.length - 3)
+                }
+                else {
+                    divCon.innerHTML = divCon.innerHTML + "."
+                }
+            }, 100)
+        }
+        const main = async () => {
+            for (item of text) {
+                await adItem(item)
+                await blinkDot()
+            }
+            clearInterval(dot)
+
+        }
+        main()
+    </script>
+</body>
+
+</html>
