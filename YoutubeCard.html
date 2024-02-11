@@ -108,6 +108,111 @@
         button {
             cursor: pointer;
         }
+
+        @media screen and (max-width:1092px) {
+            .container {
+                background-color: aqua;
+                flex-direction: column;
+            }
+
+            .left {
+                width: 90vw;
+            }
+
+            .right {
+                width: 90vw;
+            }
+
+            .left .videoCon {
+                width: 88vw;
+                height: 30vh;
+            }
+
+            .videoCon .img {
+                width: 30vw;
+                height: 28vh;
+            }
+
+            .img img {
+                width: 30vw;
+                height: 28vh;
+            }
+
+            .videoCon .textCon {
+                width: 58vw;
+                height: 28vh;
+            }
+
+            .textCon h1 {
+                width: 55vw;
+            }
+
+            .youtubeForm input,
+            button {
+                width: 80vw;
+            }
+        }
+
+        @media screen and (max-width:700px) {
+            .left .videoCon {
+                width: 88vw;
+                height: 20vh;
+            }
+
+            .videoCon .img {
+                width: 30vw;
+                height: 18vh;
+            }
+
+            .img img {
+                width: 30vw;
+                height: 18vh;
+            }
+
+            .videoCon .textCon {
+                width: 58vw;
+                height: 18vh;
+            }
+        }
+
+        @media screen and (max-width:436px) {
+            .left .videoCon {
+                flex-direction: column;
+                height: 28vh;
+            }
+
+            .videoCon .img {
+                width: 85vw;
+                height: 20vh;
+            }
+
+            .img img {
+                width: 85vw;
+                height: 20vh;
+            }
+
+            .videoCon .textCon {
+                width: 85vw;
+                height: 8vh;
+            }
+
+            .textCon h1 {
+                font-size: 15px;
+                width: 83vw;
+            }
+
+            .textCon p {
+                font-size: 10px;
+                width: 83vw;
+                font-weight: bold;
+            }
+
+            .youtubeForm input,
+            button {
+                width: 80vw;
+                height: 30px;
+            }
+        }
     </style>
 </head>
 
