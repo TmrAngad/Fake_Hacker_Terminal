@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Box</title>
+    <style>
+        body {
+            height: 80vh;
+            width: 80vw;
+            box-sizing: border-box;
+            background-color: antiquewhite;
+        }
+
+        .container {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 2px solid peru;
+            transition: all 1s;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //Random Postion box with Random background color
+
+        // Color variables
+        let rgbR;
+        let rgbG;
+        let rgbB;
+
+        //position varibales
+        let topPosition;
+        let leftPosition;
+
+        // Container
+        let divCon;
+
+        const randomColor=()=>{
+            rgbR = Math.floor(Math.random() * 255)
+            rgbG = Math.floor(Math.random() * 255)
+            rgbB = Math.floor(Math.random() * 255)
+        }
+        const randomPositionValue=()=>{
+            leftPosition = Math.floor(Math.random() * 80)
+            topPosition = Math.floor(Math.random() * 80)
+        }
+        const randomPosition=()=>{
+            let container = `
+             <div class="container" style="
+                     position: absolute;
+                    top: ${topPosition}vh;
+                    left: ${leftPosition}vw;"></div>`
+            document.querySelector('body').innerHTML=container
+        }
+        const setRandomColor=()=>{
+            divCon=document.querySelector('div')
+            divCon.style.backgroundColor=`rgb(${rgbR},${rgbG},${rgbB})`
+            divCon.style.borderColor=`rgb(${rgbR},${rgbG},${rgbB})`
+        }
+        let main = () => {
+            randomColor()
+            randomPositionValue()
+            randomPosition()
+            setRandomColor()
+        }
+        setInterval(main,1000)
+
+
+
+
+    </script>
+</body>
+
+</html>
