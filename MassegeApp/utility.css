@@ -1,0 +1,35 @@
+.flexBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+.flexTop{
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+.borderBox{
+    border:2px solid rgb(104, 30, 3) ;
+}
+.bgColor{
+    background-color: rgb(239, 107, 59) ;
+    color: rgb(9, 243, 165);
+}
+.transparentBg{
+    background-color: rgba(239, 107, 59,0.4)
+}
+.radiusBox{
+    border-radius: 2em;
+}
+.minRadius{
+    border-radius: 1em;
+}
+.addPadding{
+    padding:0px 10px;
+    
+}
+.fontFamily{
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+}
