@@ -3,7 +3,9 @@
 
         //msg input variable 
         let leftMsgCon;
-        let rightMsgCon;
+        let rightMsgCon;    
+        let leftmsgData=document.querySelector('.leftMsgCon');
+        let rightmsgData=document.querySelector('.rightMsgCon');
 
         //msg output variable 
         let leftCon;
@@ -52,11 +54,18 @@
         }
 
         leftbtn.addEventListener('click', () => {
-            if(leftMsgCon.value!==""){
-                leftMsg()
-                console.log(leftMsgCon.value!=="")
+            if(leftmsgData.value==""){
+                alert("Plese enter some massages...")
+            }
+            else{
+               leftMsg()
             }
         })
         rightbtn.addEventListener('click', () => {
-            rightMsg()
+            if(rightmsgData.value==""){
+                alert("Plese enter some massages...")
+            }
+            else{
+               rightMsg()
+            }
         })
