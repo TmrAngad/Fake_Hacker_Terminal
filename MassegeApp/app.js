@@ -52,7 +52,10 @@
         }
 
         leftbtn.addEventListener('click', () => {
-            leftMsg()
+            if(leftMsgCon.value!==""){
+                leftMsg()
+                console.log(leftMsgCon.value!=="")
+            }
         })
         rightbtn.addEventListener('click', () => {
             rightMsg()
