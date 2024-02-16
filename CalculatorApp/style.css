@@ -24,6 +24,11 @@ body{
     box-shadow: 5px 5px rgb(19, 24, 44);
     border: 2px solid white;
 }
+.left span{
+    height: 2px;
+    width: 10px;
+    background-color:rgb(84, 92, 126) ;
+}
 .rows{
     display: flex;
     justify-content: center;
