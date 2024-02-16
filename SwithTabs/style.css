@@ -1,0 +1,69 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: blanchedalmond;
+}
+.mainCon{
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+
+
+}
+.child1{
+    flex-direction: column;
+    gap: 1em;
+    font-family: "Roboto", sans-serif;
+}
+.child1 p{
+    font-family: "Open Sans", sans-serif;
+}
+.box{
+    height: 30vh;
+    width: 30vw;
+    border:2px solid rgb(135, 97, 8);
+    border-radius: 0.5em;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgb(135, 115, 69)  ;
+}
+.box img{
+    height: 30vh;
+    width: 30vw;
+    border-radius: 0.5em;
+    transition: all 1s;
+}
+.box img:hover{
+    transform: scale(2);
+}
+.tabs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+
+}
+.tabs span{
+    padding: 10px 2.5em;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+}
+.tabsCon{
+    width: 30vw;
+    background-color: rgb(225, 209, 209);
+    height: 25vh;
+    padding: 1em 1em;
+}
+.tabsCon h3{
+    font-family: "Roboto", sans-serif;
+}
+.tabsCon p{
+    font-family: "Open Sans", sans-serif;
+}
+.background{
+    background-color: rgb(225, 209, 209);
+    
+}
