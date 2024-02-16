@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: fleX;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.4em;
+}
+.main{
+    display: fleX;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5em;
+    background-color: rgb(31, 38, 69);
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 5px 5px rgb(19, 24, 44);
+    border: 2px solid white;
+}
+.rows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    /* margin-bottom: 0.4em; */
+}
+.rows input{
+    height: 40px;
+    width: 220px;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 0.2em;
+    box-shadow: 2px 3px rgb(194, 190, 190);
+   
+}
+.rows button{  
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    border-radius: 5px;
+    /* padding: 5px 5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: white; */
+}
+button{
+    background-color:rgb(84, 92, 126) ;
+    border: 2px solid rgb(84, 92, 126);
+    box-shadow: 2px 3px rgb(57, 63, 89);
+    color: white;
+}
+
+.operator{
+    background-color:yellow ;
+    border: 2px solid yellow;
+    box-shadow: 2px 3px rgb(205, 170, 63);
+    color: black;
+    font-weight: bold;
+}
+.equal{
+    background-color: rgb(247, 126, 5);
+    border: 2px solid rgb(247, 126, 5);
+    box-shadow: 2px 3px rgb(156, 79, 3);
+    
+}
+.clear{
+    background-color: red;
+    border-color: red;
+    box-shadow: 2px 3px rgb(135, 3, 3);
+}
