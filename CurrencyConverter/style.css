@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.flexBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background:url('bg.jpeg') rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    padding: 3em;
+    border:2px solid rgb(40, 37, 37);
+    width: 30vw;
+    border-radius: 1em;
+    box-shadow: 4px 6px rgb(17, 17, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:1.5em;
+    backdrop-filter: blur(15px);
+}
+.main .box{
+    height: 50px;
+    width: 18vw;
+    border-radius: 0.2em;
+    background-color: white;
+    color: white;
+
+}
+.box1{
+    border: 2px solid rgb(197, 196, 196);
+    box-shadow: 2px 3px rgb(197, 196, 196);
+
+}
+.box1 input{
+    height: 40px;
+    width: 18vw;
+    background-color: transparent;
+    border-color: transparent;
+    padding:0px 0.5em;
+    font-size: 20px;
+}
+
+.box4,button{
+    height: 50px;
+    width: 18vw;
+    background: rgb(184, 103, 4);
+    border: 2px solid  rgb(184, 103, 4);
+    color: white;
+    font-size: 20px;
+    border-radius: 0.2em;
+    box-shadow: 2px 3px rgb(94, 52, 2);
+    cursor: pointer;
+}
+.box2,.box3{
+    border: 2px solid rgb(197, 196, 196);
+    box-shadow: 2px 3px rgb(197, 196, 196);
+    gap:1em;
+    padding: 0px 0.5em;
+}
+.box2 select{
+    width: 14vw;
+    height: 40px;
+    background: transparent;
+    border-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+.box2 img{
+    height: 38px;
+
+}
+.box3 select{
+    width: 14vw;
+    height: 40px;
+    background: transparent;
+    border-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+.box3 img{
+    height: 38px;
+}
+.box5{
+    border: 2px solid rgb(205, 200, 200);
+    box-shadow: 2px 3px rgb(197, 196, 196);
+    font-size: 20px;
+}
+.box5 p{
+    color: rgb(184, 103, 4);
+}
+
