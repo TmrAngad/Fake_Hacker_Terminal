@@ -210,7 +210,7 @@ const updateFlagto=(opt)=>{
 
 const inputAmt=()=>{
     intCon=document.querySelector('input')
-    if(intCon.value<0 && intCon.value=="" ){
+    if(intCon.value<=0 || intCon.value=="" ){
         intCon.value="1"
     }
 }
