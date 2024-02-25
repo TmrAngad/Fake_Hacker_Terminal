@@ -1,0 +1,27 @@
+.flexCon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 0.5em; */
+}
+.textGray{
+    color: gray;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+.font{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bgcolor{
+    background-color: gray;
+}
+.bgBlue{
+    background-color: blue;
+    color: white;
+    border: 2px solid blue;
+}
+.borderBox{
+    border: 2px solid rgb(194, 188, 188);
+}
+.home{
+    font-weight: bold;
+}

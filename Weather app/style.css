@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: url('bg.jpeg'), rgba(0, 0, 0, 0.8);
+    background-blend-mode: multiply;
+    background-size: cover;
+    color: white;
+}
+.navbar{
+    width: 100vw;
+    padding: 0.5em 1em;
+    /* border: 2px solid black; */
+    gap: 45vw;
+    background-color: rgb(241, 228, 228);
+    color: black;
+}
+.searchCon{
+    gap:1em;
+}
+.searchCon input{
+    height: 30px;
+    width: 200px;
+    padding: 0px 0.5em;
+
+}
+
+.searchCon button{
+    height: 30px;
+    padding: 0.5em;
+    color: white;
+    border: 2px solid blue;
+    border-radius: 0.3em;
+    cursor: pointer;
+    box-shadow: 2px 3px rgb(2, 2, 121);
+}
+.manu{
+    gap: 1.5em;
+}
+.manu h4{
+    cursor: pointer;
+    font-size: 20px;
+}
+ul{
+    gap: 0.8em;
+}
+ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+/*  Mian conatainer */
+.main{
+    width: 100vw;
+    gap:1em;
+    margin: 2em 2em;
+    flex-direction: column;
+}
+.main .cardCon{
+    gap:1.5em;
+}
+.cardCon .cardBox{
+    height: 40vh;
+    width: 25vw;
+    border-radius: 0.4em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    backdrop-filter: blur(5px);
+
+}
+.headerBox{
+    height: 50px;
+    /* width: 20vw; */
+    color: white;
+    /* font-size: 30px; */
+}
+.infoBox{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    text-align: center;
+}
+.infoData ul{
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5em;
+}
+ul  li{
+    font-family: Arial, Helvetica, sans-serif ;
+    /* margin-bottom: 0.5em; */
+}
+li a{
+    text-decoration: none;
+    color:gray ;
+}
+.cardCon .butBox{
+    padding: 0.5em;
+    text-align: center;
+}
+.butBox button{
+    height: 40px;
+    width: 23vw;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 0.2em;
+}
+
+/* Footer  */
+.footer{
+    flex-direction: column;
+    gap: 1em;
+}
+.tableCon{
+    width: 100vw;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+.tableCon table{
+    width: 90vw;
+    /* border: 2px solid gray; */
+    /* border: 2px solid red; */
+}
+table tr{
+    table-layout: fixed;
+    text-align: center;
+    border: 2px solid gray;
+
+}
+tr th{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(100, 94, 94);
+    /* border: 2px solid red; */
+    /* text-transform: capitalize; */
+}

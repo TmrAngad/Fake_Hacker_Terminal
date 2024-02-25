@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <title>Weather app</title>
+</head>
+
+<body>
+    <div class="navbar flexCon">
+        <div class="manu flexCon">
+            <h4 class="font">Weather App</h4>
+            <ul class="flexCon">
+                <li class="font home">Home</li>
+                <li class="textGray font">
+                    <a href="https://rapidapi.com/category/Weather" class="font" target="_blank">About this app</a>
+                </li>
+                <li class="textGray font">
+                    <a href="https://rapidapi.com/category/Weather" class="font" target="_blank">Usage Guide</a>
+                </li>
+            </ul>
+        </div>
+        <div class="searchCon flexCon">
+            <input type="text" class="SearchCity">
+            <button class="bgBlue searchBut">Search</button>
+        </div>
+    </div>
+    <div class="main flexCon">
+        <h1 class="font">Weather for <span class="cityName"></span></h1>
+        <div class="cardCon flexCon">
+            <div class="cardBox borderBox">
+                <div class="headerBox bgBlue flexCon">
+                    <h2 class="font">Tempertures</h2>
+                </div>
+                <div class="infoBox">
+                    <span class="temp"></span> &#8451;
+                </div>
+                <div class="infoData">
+                    <ul class="flexCon">
+                        <li>Temerture is <span class="temp"></span></li>
+                        <li>Minmum Temp is <span class="min_temp"></span></li>
+                        <li>Maximum Temp is <span class="max_temp"></span></li>
+                    </ul>
+                </div>
+                <div class="butBox">
+                    <a href="https://en.wikipedia.org/wiki/Weather" target="_blank">
+                        <button class="bgBlue">Lets Know Weathe</button>
+                    </a>
+                </div>
+            </div>
+            <div class="cardBox borderBox">
+                <div class="headerBox bgBlue flexCon">
+                    <h2 class="font">Humidity info</h2>
+                </div>
+                <div class="infoBox">
+                    <span class="humidity"></span> %
+                </div>
+                <div class="infoData">
+                    <ul class="flexCon">
+                        <li>Humidity is <span class="humidity"></span></li>
+                        <li>Feels Like <span class="feels_like"></span></li>
+                        <li>Wind Degrees is <span class="wind_degrees"></span></li>
+                    </ul>
+                </div>
+                <div class="butBox">
+                    <a href="https://en.wikipedia.org/wiki/Weather" target="_blank">
+                        <button class="bgBlue">Lets Know Weathe</button>
+                    </a>
+                </div>
+            </div>
+            <div class="cardBox borderBox">
+                <div class="headerBox bgBlue flexCon">
+                    <h2 class="font">Wind info</h2>
+                </div>
+                <div class="infoBox">
+                    <span class="wind_speed"></span> km/hr
+                </div>
+                <div class="infoData">
+                    <ul class="flexCon">
+                        <li>Wind spead is <span class="wind_speed"></span></li>
+                        <li>Sunrise Time is <span class="sunrise"></span></li>
+                        <li>Sunset Time is <span class="sunset"></span></li>
+                    </ul>
+                </div>
+                <div class="butBox">
+                    <a href="https://en.wikipedia.org/wiki/Weather" target="_blank">
+                        <button class="bgBlue">Lets Know Weathe</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer flexCon">
+        <h1 class="font">Weather of other common places</h1>
+        <div class="tableCon flexCon ">
+            <table cellspacing="10">
+                <tr>
+                    <th></th>
+                    <th><span>Cloud_pct</span></th>
+                    <th><span>Feels_like</span></th>
+                    <th><span>Humidity</span></th>
+                    <th><span>Max_temp</span></th>
+                    <th><span>Min_temp</span></th>
+                    <th><span>Sunrise</span></th>
+                    <th><span>Sunset</span></th>
+                    <th><span>Temp</span></th>
+                    <th><span>Wind_degrees</span></th>
+                    <th><span>Wind_speed</span></th>
+                </tr>
+                <tr class="indiaData">
+                    <th>India</th>
+                    <th><span class="india-cloud_pct"></span></th>
+                    <th><span class="india-feels_like"></span></th>
+                    <th><span class="india-humidity"></span></th>
+                    <th><span class="india-max_temp"></span></th>
+                    <th><span class="india-min_temp"></span></th>
+                    <th><span class="india-sunrise"></span></th>
+                    <th><span class="india-sunset"></span></th>
+                    <th><span class="india-temp"></span></th>
+                    <th><span class="india-wind_degrees"></span></th>
+                    <th><span class="india-wind_speed"></span></th>
+                </tr>
+
+                <tr>
+                    <th>America</th>
+                    <th><span class="america-cloud_pct"></span></th>
+                    <th><span class="america-feels_like"></span></th>
+                    <th><span class="america-humidity"></span></th>
+                    <th><span class="america-max_temp"></span></th>
+                    <th><span class="america-min_temp"></span></th>
+                    <th><span class="america-sunrise"></span></th>
+                    <th><span class="america-sunset"></span></th>
+                    <th><span class="america-temp"></span></th>
+                    <th><span class="america-wind_degrees"></span></th>
+                    <th><span class="america-wind_speed"></span></th>
+                </tr>
+                <th>China</th>
+                <th><span class="china-cloud_pct"></span></th>
+                <th><span class="china-feels_like"></span></th>
+                <th><span class="china-humidity"></span></th>
+                <th><span class="china-max_temp"></span></th>
+                <th><span class="china-min_temp"></span></th>
+                <th><span class="china-sunrise"></span></th>
+                <th><span class="china-sunset"></span></th>
+                <th><span class="china-temp"></span></th>
+                <th><span class="china-wind_degrees"></span></th>
+                <th><span class="china-wind_speed"></span></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
