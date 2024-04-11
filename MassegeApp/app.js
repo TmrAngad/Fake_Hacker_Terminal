@@ -38,7 +38,7 @@
         const rightMsg = () => {
             rightMsgCon = document.querySelector('.rightMsgCon')
             let leftshowCon = `
-            <div class="msgChildCon borderBox addPadding fontFamily style="margin-left: 6em;background-color: black;color: green;">
+            <div class="msgChildCon borderBox addPadding fontFamily style="margin-left: 5em;background-color: black;color: green;">
                     ${rightMsgCon.value}
                 </div>
             

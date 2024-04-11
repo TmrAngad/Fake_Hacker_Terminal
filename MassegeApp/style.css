@@ -24,11 +24,14 @@
     border-radius: 5px;
     /* font-weight: bold; */
 }
-.msgCon p{
+.msgCon button{
     background-color: rgb(12, 6, 1);
     padding: 5px 5px;
     border-radius:5px ;
     cursor: pointer;
+    color: aqua;
+    border: 2px solid aqua;
+    /* font-weight: bold; */
 }
 .readMsgCon{
     width: 30vw;
@@ -37,6 +40,8 @@
     box-shadow: 0px 0px 10px 5px rgb(155, 112, 57) inset;
     flex-direction: column;
     padding: 1em;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 .readMsgCon .msgChildCon{
     height: 40px;
