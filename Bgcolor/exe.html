@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background Changer</title>
+<style>
+    body {
+        transition: background-color 0.5s ease;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    .container {
+        width: 80%;
+        margin: 100px auto;
+    }
+
+    #colorBar {
+        width: 100%;
+        height: 20px;
+        background: linear-gradient(to right, red, yellow, green, blue, violet);
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Background Changer</h1>
+    <div id="colorBar"></div>
+</div>
+
+<script>
+    document.getElementById("colorBar").addEventListener("click", function(event) {
+        let barWidth = event.clientX - this.offsetLeft;
+        let totalWidth = this.offsetWidth;
+        let percentage = (barWidth / totalWidth) * 100;
+
+        let red = 255;
+        let green = 0;
+        let blue = 0;
+
+        if (percentage < 20) {
+            red = 255;
+            green = Math.round(percentage / 20 * 255);
+            blue = 0;
+        } else if (percentage < 40) {
+            red = Math.round((40 - percentage) / 20 * 255);
+            green = 255;
+            blue = 0;
+        } else if (percentage < 60) {
+            red = 0;
+            green = 255;
+            blue = Math.round((percentage - 40) / 20 * 255);
+        } else if (percentage < 80) {
+            red = 0;
+            green = Math.round((80 - percentage) / 20 * 255);
+            blue = 255;
+        } else {
+            red = Math.round((percentage - 80) / 20 * 255);
+            green = 0;
+            blue = 255;
+        }
+
+        document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bgcolor app</title>
+</head>
+<body>
+    <div class="main">
+        <div class="child box1">
+            <h1>Drag the <span>Bar</span> and change the <span>Background</span> Color</h1>
+        </div>
+        <div class="child box2">
+            <div class="childBox">
+                <p style="background-color: red;" class="bar">Red</p>
+                <input type="range" value="0" min="0" max="255" step="1" class="redBar" >
+            </div>
+            <div class="childBox">
+                <p style="background-color: green;" class="bar">Green</p>
+                <input type="range" value="0" min="0" max="255" step="1" class="greenBar">
+            </div>
+            <div class="childBox">
+                <p  style="background-color: blue;" class="bar">Blue</p>
+                <input type="range" value="0" min="0" max="255" step="1" class="blueBar">
+            </div>
+            <div class="childBox">
+                <p  style="background-color: gray" class="bar">Alpha</p>
+                <input type="range" value="1" min="0" max="1" step="0.1" class="alphaBar">
+            </div>
+        </div>
+        <div class="child">
+            <p class="rgbBar">rgba(0,0,0,1)</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
